@@ -56,7 +56,7 @@ check_sum() {
 }
 
 install_file() {
-  install -m 644 "${dir_tmp}"/${file_dlc} "${XRAY}"/${file_site}
+  install -m 644 "${dir_tmp}"/${file_site} "${XRAY}"/${file_site}
   install -m 644 "${dir_tmp}"/${file_ip} "${XRAY}"/${file_ip}
   rm -r "${dir_tmp}"
 }
