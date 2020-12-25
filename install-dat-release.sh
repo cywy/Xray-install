@@ -17,7 +17,6 @@ XRAY="/usr/local/share/xray"
 DOWNLOAD_LINK_GEOIP="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
 DOWNLOAD_LINK_GEOSITE="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
 file_ip='geoip.dat'
-file_dlc='dlc.dat'
 file_site='geosite.dat'
 dir_tmp="$(mktemp -d)"
 
