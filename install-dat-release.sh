@@ -2,8 +2,7 @@
 
 # This Bash script to install the latest release of geoip.dat and geosite.dat:
 
-# https://github.com/v2fly/geoip
-# https://github.com/v2fly/domain-list-community
+# https://github.com/Loyalsoldier/v2ray-rules-dat
 
 # Depends on cURL, please solve it yourself
 
@@ -15,8 +14,8 @@
 
 # You can modify it to /usr/local/lib/xray
 XRAY="/usr/local/share/xray"
-DOWNLOAD_LINK_GEOIP="https://github.com/v2fly/geoip/releases/latest/download/geoip.dat"
-DOWNLOAD_LINK_GEOSITE="https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat"
+DOWNLOAD_LINK_GEOIP="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+DOWNLOAD_LINK_GEOSITE="https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
 file_ip='geoip.dat'
 file_dlc='dlc.dat'
 file_site='geosite.dat'
@@ -66,7 +65,7 @@ install_file() {
 main() {
   check_if_running_as_root
   download_files $DOWNLOAD_LINK_GEOIP $file_ip
-  download_files $DOWNLOAD_LINK_GEOSITE $file_dlc
+  download_files $DOWNLOAD_LINK_GEOSITE $file_site
   check_sum
   install_file
 }
